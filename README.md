@@ -229,9 +229,12 @@ I created a second VM named: client
 
 Configuration:
 •	- Windows 10 Pro
+
 •	- Internal Network adapter only
 
+
 The client automatically received:
+
 •	- An IP address from DHCP
 
 •	- DNS settings
@@ -260,35 +263,58 @@ After restarting, I was able to log in using domain user accounts created earlie
 12. Verification and Testing
 
 I verified:
+
 •	- DHCP leases
+
 •	- DNS resolution
+
 •	- Internet connectivity
+
 •	- Domain authentication
+
 •	- Domain-joined computer objects in Active Directory
 
+
+---------------------------------------
 
 Commands used:
 
 ipconfig
+
 ping google.com
+
 ping mydomain.com
+
 whoami
 
+
+---------------------------------------
 
 
 This project helped me practice and understand:
 
 •	- Active Directory administration
+
 •	- Windows Server installation and configuration
+
 •	- DHCP configuration
+
 •	- DNS configuration
+
 •	- NAT and routing
+
 •	- PowerShell scripting
+
 •	- User and computer management
+
 •	- Domain joining
+
 •	- Virtual networking
+
 •	- Troubleshooting Windows networking issues
 
+
+---------------------------------------
 
 
 Through this lab, I gained hands-on experience with how enterprise Windows environments function in real-world corporate networks.
@@ -304,16 +330,25 @@ I also learned:
 •	- How PowerShell can automate repetitive administrative tasks
 
 
-
+---------------------------------------
 Possible future additions:
+
 •	- Group Policy Objects (GPOs)
+
 •	- File shares and permissions
+
 •	- WSUS
+
 •	- VPN configuration
+
 •	- SIEM integration
+
 •	- Windows Server backups
+
 •	- Additional client machines
+
 •	- Security hardening
+
 
 
 Stay tuned.
