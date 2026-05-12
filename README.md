@@ -145,48 +145,70 @@ Domain Admins
 <img width="2560" height="1389" alt="vlcsnap-2026-05-12-23h35m56s889" src="https://github.com/user-attachments/assets/42d98956-7616-40dd-9ec2-5befbf110bf3" />
 
 This allowed me to manage the domain using a separate admin account instead of the built-in Administrator account.
-
+ <img width="2370" height="1363" alt="vlcsnap-2026-05-12-23h39m05s320" src="https://github.com/user-attachments/assets/e7cab7e8-1a36-4882-8d15-73560ac24c2a" />
+ 
 
 7. Configured NAT and Routing
 
 I installed:
+
 Remote Access
+<img width="1124" height="858" alt="vlcsnap-2026-05-12-23h41m33s964" src="https://github.com/user-attachments/assets/1074c126-6a2d-416d-8299-b1fd1b69c823" />
+<img width="1063" height="828" alt="vlcsnap-2026-05-12-23h42m40s507" src="https://github.com/user-attachments/assets/3a140b86-3e11-49fa-9205-880bbb40b827" />
 Then enabled:
 •	- NAT
 •	- Routing and Remote Access
+
+<img width="1230" height="930" alt="vlcsnap-2026-05-12-23h45m02s742" src="https://github.com/user-attachments/assets/a545a55c-2352-47c6-af42-374428c03cf9" />
+
 This allowed internal client machines to access the internet through the Domain Controller.
 
 
 8. Configured DHCP
+<img width="976" height="726" alt="vlcsnap-2026-05-12-23h47m15s765" src="https://github.com/user-attachments/assets/e9d2ffd8-596d-4962-bafa-436404da74dd" />
 
 I installed the DHCP role and configured a scope:
+
 172.16.0.100 - 172.16.0.200
+<img width="1144" height="733" alt="vlcsnap-2026-05-12-23h49m15s245" src="https://github.com/user-attachments/assets/9b2fbebc-d9e4-4c34-ae58-1399e5e0c354" />
+
 DHCP settings included:
 •	- Default Gateway: 172.16.0.1
 •	- DNS Server: 172.16.0.1
+<img width="1071" height="771" alt="vlcsnap-2026-05-12-23h50m57s589" src="https://github.com/user-attachments/assets/4424923b-c127-411a-aa97-f4f8c2ea5835" />
+
 This allowed client machines to automatically receive:
 •	- IP addresses
 •	- DNS settings
 •	- Gateway information
+<img width="1056" height="794" alt="vlcsnap-2026-05-12-23h52m42s528" src="https://github.com/user-attachments/assets/34af70de-e98a-4f28-b973-e6579e9aa31f" />
 
 
 9. Bulk User Creation with PowerShell
 
+
+[PowerShell Script](https://github.com/joshmadakor1/AD_PS)
+
+
 I used a PowerShell script to automatically create over 1000 Active Directory users.
+
 The script:
 •	- Imported names from a text file
 •	- Created usernames automatically
 •	- Assigned passwords
 •	- Added users into a dedicated OU
+
 Example username format:
 ienache
+
 This helped me practice:
 •	- PowerShell scripting
 •	- Active Directory automation
 •	- Bulk user management
 
 
-10. Created Windows 10 Client VM
+
+11. Created Windows 10 Client VM
 
 I created a second VM named: client
 
