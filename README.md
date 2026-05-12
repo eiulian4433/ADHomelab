@@ -10,6 +10,7 @@ In this project, I built a small corporate-style Active Directory environment us
 The goal of this lab was to practice core Windows Server administration and networking concepts commonly used in IT Support, Help Desk, and System Administration roles.
 
 This lab includes:
+
 •	- Active Directory Domain Services (AD DS)
 •	- DNS
 •	- DHCP
@@ -22,6 +23,7 @@ This lab includes:
 
 Lab Topology
 
+<img width="1630" height="965" alt="lab" src="https://github.com/user-attachments/assets/ce9b0a6e-1933-4298-b815-00539c6382de" />
 
 
 Technologies Used
