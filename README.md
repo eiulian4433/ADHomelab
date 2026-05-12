@@ -193,22 +193,37 @@ This allowed client machines to automatically receive:
 I used a PowerShell script to automatically create over 1000 Active Directory users.
 
 The script:
+
 •	- Imported names from a text file
+
 •	- Created usernames automatically
+
 •	- Assigned passwords
+
 •	- Added users into a dedicated OU
 
+<img width="935" height="675" alt="vlcsnap-2026-05-13-00h01m27s331" src="https://github.com/user-attachments/assets/45ead618-f970-493f-992a-32ede1d2155f" />
+
+
 Example username format:
+
 ienache
 
 This helped me practice:
+
 •	- PowerShell scripting
+
 •	- Active Directory automation
+
 •	- Bulk user management
 
 
 
+
+
 11. Created Windows 10 Client VM
+
+
 
 I created a second VM named: client
 
@@ -218,18 +233,28 @@ Configuration:
 
 The client automatically received:
 •	- An IP address from DHCP
+
 •	- DNS settings
+
 •	- Internet connectivity through NAT
+
+
+<img width="2512" height="1113" alt="vlcsnap-2026-05-13-00h10m19s329" src="https://github.com/user-attachments/assets/4789698a-30d5-4c47-a49d-208516daff0e" />
 
 
 11. Joined the Client to the Domain
 
 I renamed the client machine: CLIENT1
+
 Then joined it to:
 mydomain.com
+
+<img width="1217" height="1135" alt="vlcsnap-2026-05-13-00h13m25s104" src="https://github.com/user-attachments/assets/d0feca32-aa15-4ddd-8461-dbd20c69d863" />
+
+
 After restarting, I was able to log in using domain user accounts created earlier in Active Directory.
-Example:
-mydomain\ienache
+
+<img width="1208" height="1148" alt="vlcsnap-2026-05-13-00h14m51s668" src="https://github.com/user-attachments/assets/a5f7e4ac-3a98-4b1f-81e8-888dd6a5ecd8" />
 
 
 12. Verification and Testing
@@ -241,14 +266,15 @@ I verified:
 •	- Domain authentication
 •	- Domain-joined computer objects in Active Directory
 
+
 Commands used:
+
 ipconfig
 ping google.com
 ping mydomain.com
 whoami
 
 
-Skills Demonstrated
 
 This project helped me practice and understand:
 
@@ -264,15 +290,19 @@ This project helped me practice and understand:
 •	- Troubleshooting Windows networking issues
 
 
-Key Takeaways
 
 Through this lab, I gained hands-on experience with how enterprise Windows environments function in real-world corporate networks.
 
 I also learned:
+
 •	- How centralized authentication works
+
 •	- How domain users can log into multiple systems
+
 •	- How DHCP and DNS interact in Active Directory environments
+
 •	- How PowerShell can automate repetitive administrative tasks
+
 
 
 Possible future additions:
@@ -285,12 +315,6 @@ Possible future additions:
 •	- Additional client machines
 •	- Security hardening
 
-Conclusion
 
-This project gave me practical experience with core IT infrastructure technologies commonly used in:
-
-•	- Help Desk
-•	- IT Support
-•	- Junior System Administration
-•	- Windows Enterprise environments
+Stay tuned.
 
