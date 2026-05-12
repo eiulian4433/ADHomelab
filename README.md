@@ -97,35 +97,53 @@ After installation:
 
 <img width="1018" height="847" alt="vlcsnap-2026-05-12-22h50m41s797" src="https://github.com/user-attachments/assets/cd39af82-5820-4d90-a2d0-7ae50d03c2ba" />
 
-
 4. Configured Networking
 
 I renamed the network adapters for easier management:
+
+<img width="1118" height="631" alt="vlcsnap-2026-05-12-23h15m15s527" src="https://github.com/user-attachments/assets/2108cbf0-f420-46cb-a30e-69d8ec4644fb" />
+
 •	- INTERNET
 •	- INTERNAL
 
 I configured a static IP address on the internal adapter:
+
+<img width="1162" height="952" alt="vlcsnap-2026-05-12-23h19m58s598" src="https://github.com/user-attachments/assets/e7784e63-155c-429a-969e-52c167e7b48f" />
+
 IP Address: 172.16.0.1
 Subnet Mask: 255.255.255.0
 DNS Server: 127.0.0.1
 I left the default gateway blank because the server itself would handle routing.
 
+I Renamed the PC to DomainC
+
+<img width="1239" height="947" alt="vlcsnap-2026-05-12-23h23m29s043" src="https://github.com/user-attachments/assets/d010c21b-cf7f-4bd6-8513-67ae107bbee0" />
 
 5. Installed Active Directory Domain Services
 
 Using Server Manager, I installed:
 Active Directory Domain Services (AD DS)
+<img width="2555" height="1346" alt="vlcsnap-2026-05-12-23h25m58s424" src="https://github.com/user-attachments/assets/202842e0-ae01-44ba-892a-89e5f31288de" />
+
 I promoted the server to a Domain Controller and created a new forest:
 mydomain.com
+<img width="774" height="545" alt="vlcsnap-2026-05-12-23h27m43s430" src="https://github.com/user-attachments/assets/f1225022-d980-40e7-ae83-67b3d0d7a9a3" />
 
+<img width="1193" height="806" alt="vlcsnap-2026-05-12-23h29m19s297" src="https://github.com/user-attachments/assets/6bff0a3f-ed54-43f2-9437-d6e62f424614" />
 
 6. Created Administrative Accounts
 
 I created:
 •	- A dedicated Organizational Unit (OU)
+<img width="2560" height="1389" alt="vlcsnap-2026-05-12-23h33m23s973" src="https://github.com/user-attachments/assets/6a96bac6-29d2-4d48-81a5-20d1839c6e0c" />
+
 •	- A custom domain admin account
+<img width="2560" height="1391" alt="vlcsnap-2026-05-12-23h34m27s526" src="https://github.com/user-attachments/assets/39ccc8a0-0881-4368-b193-fc6f9f524377" />
+
 I added the account to:
 Domain Admins
+<img width="2560" height="1389" alt="vlcsnap-2026-05-12-23h35m56s889" src="https://github.com/user-attachments/assets/42d98956-7616-40dd-9ec2-5befbf110bf3" />
+
 This allowed me to manage the domain using a separate admin account instead of the built-in Administrator account.
 
 
