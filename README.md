@@ -6,7 +6,9 @@ Active Directory Home Lab (VirtualBox)
 
 Overview
 
-In this project, I built a small corporate-style Active Directory environment using VirtualBox, Windows Server 2022, and Windows 10. The goal of this lab was to practice core Windows Server administration and networking concepts commonly used in IT Support, Help Desk, and System Administration roles.
+In this project, I built a small corporate-style Active Directory environment using VirtualBox, Windows Server 2022, and Windows 10.
+The goal of this lab was to practice core Windows Server administration and networking concepts commonly used in IT Support, Help Desk, and System Administration roles.
+
 This lab includes:
 •	- Active Directory Domain Services (AD DS)
 •	- DNS
@@ -19,15 +21,7 @@ This lab includes:
 
 
 Lab Topology
-INTERNET
-    |
-[Windows Server 2022 Domain Controller]
-    |
-    |-- NAT / Routing
-    |
-[Internal Virtual Network]
-    |
-[Windows 10 Client]
+
 
 
 Technologies Used
@@ -43,20 +37,26 @@ Technologies Used
 
 What I Configured
 
-1. Installed VirtualBox
+1. Instalation & download
 
 
 I installed:
+
 •	- Oracle VirtualBox
 •	- VirtualBox Extension Pack
 
-I also downloaded:
+I downloaded:
+
 •	- Windows Server 2022 ISO
 •	- Windows 10 Pro ISO
 
 
 2. Created the Domain Controller VM
+
 I created a virtual machine named: winDC
+
+
+<img width="1280" height="749" alt="vlcsnap-2026-05-12-22h29m07s126" src="https://github.com/user-attachments/assets/9d888dba-17c2-497a-b40a-44b765b92f86" />
 
 Configuration:
 •	- 4 GB RAM
@@ -67,15 +67,33 @@ Network adapters:
 •	- NAT adapter for internet access
 •	- Internal Network adapter for the private lab network
 
+<img width="1271" height="742" alt="vlcsnap-2026-05-12-22h40m24s069" src="https://github.com/user-attachments/assets/4936672d-0288-4f9f-a794-dba913b4a7df" />
+
+<img width="1270" height="736" alt="vlcsnap-2026-05-12-22h40m41s852" src="https://github.com/user-attachments/assets/3e8a4553-6a96-45c5-ad3a-9ef1ddc17f0a" />
+
 
 3. Installed Windows Server 2022
 
+<img width="1025" height="857" alt="vlcsnap-2026-05-12-22h45m17s479" src="https://github.com/user-attachments/assets/f6b777a3-f0c0-4c63-9a7d-d306948a61b7" />
+
+
 I installed:
+
 Windows Server 2022 Standard (Desktop Experience)
+
 After installation:
+
 •	- Set Administrator password
+
+<img width="1026" height="857" alt="vlcsnap-2026-05-12-22h47m26s667" src="https://github.com/user-attachments/assets/4625859a-20b8-47b1-9040-a92c31c74f4c" />
+
 •	- Installed VirtualBox Guest Additions
+<img width="1026" height="853" alt="vlcsnap-2026-05-12-22h49m43s174" src="https://github.com/user-attachments/assets/912a6825-41c7-40e1-8ad5-6611d434d7b0" />
+<img width="1011" height="853" alt="vlcsnap-2026-05-12-22h50m14s317" src="https://github.com/user-attachments/assets/49e09e68-c5a6-491a-8bb1-b77ccb5804e8" />
+
 •	- Restarted the VM
+
+<img width="1018" height="847" alt="vlcsnap-2026-05-12-22h50m41s797" src="https://github.com/user-attachments/assets/cd39af82-5820-4d90-a2d0-7ae50d03c2ba" />
 
 
 4. Configured Networking
